@@ -175,9 +175,12 @@
   white-space: nowrap;
 }
 
-.hz-chain img {
+.hz-chain img,
+.hz-chain svg {
   width: 26px;
   height: 26px;
+  flex: none;
+  color: var(--accent-safe);
 }
 
 .hz-chain small {
@@ -346,9 +349,8 @@
 .hz-balance-meta span {
   flex: 1 1 auto;
   min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .hz-balance-meta button {
